@@ -35,8 +35,8 @@
             Column4 = new DataGridViewTextBoxColumn();
             cbMotor = new ComboBox();
             cbColor = new ComboBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtMarca = new TextBox();
+            txtModelo = new TextBox();
             btnEnviar = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -112,21 +112,21 @@
             cbColor.Size = new Size(249, 31);
             cbColor.TabIndex = 2;
             // 
-            // textBox1
+            // txtMarca
             // 
-            textBox1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(198, 81);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(249, 32);
-            textBox1.TabIndex = 3;
+            txtMarca.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtMarca.Location = new Point(198, 81);
+            txtMarca.Name = "txtMarca";
+            txtMarca.Size = new Size(249, 32);
+            txtMarca.TabIndex = 3;
             // 
-            // textBox2
+            // txtModelo
             // 
-            textBox2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(198, 137);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(249, 32);
-            textBox2.TabIndex = 4;
+            txtModelo.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtModelo.Location = new Point(198, 137);
+            txtModelo.Name = "txtModelo";
+            txtModelo.Size = new Size(249, 32);
+            txtModelo.TabIndex = 4;
             // 
             // btnEnviar
             // 
@@ -136,6 +136,7 @@
             btnEnviar.TabIndex = 5;
             btnEnviar.Text = "Enviar";
             btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.Click += btnEnviar_Click_1;
             // 
             // label1
             // 
@@ -198,13 +199,14 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnEnviar);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtModelo);
+            Controls.Add(txtMarca);
             Controls.Add(cbColor);
             Controls.Add(cbMotor);
             Controls.Add(dgvListaAutos);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load_1;
             ((System.ComponentModel.ISupportInitialize)dgvListaAutos).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -219,8 +221,8 @@
         private DataGridViewTextBoxColumn Column4;
         private ComboBox cbMotor;
         private ComboBox cbColor;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtMarca;
+        private TextBox txtModelo;
         private Button btnEnviar;
         private Label label1;
         private Label label2;

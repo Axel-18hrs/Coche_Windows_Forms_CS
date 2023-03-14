@@ -17,7 +17,8 @@ namespace Coche_Windows_Forms_CS.Clases
         {
             get
             {
-                return Color;
+
+                return _color;
             }
             set
             {
