@@ -33,7 +33,15 @@
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
-            comboBox1 = new ComboBox();
+            cbMotor = new ComboBox();
+            cbColor = new ComboBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            btnEnviar = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvListaAutos).BeginInit();
             SuspendLayout();
             // 
@@ -81,25 +89,113 @@
             Column4.ReadOnly = true;
             Column4.Width = 125;
             // 
-            // comboBox1
+            // cbMotor
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(84, 213);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(240, 28);
-            comboBox1.TabIndex = 1;
+            cbMotor.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbMotor.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cbMotor.FormattingEnabled = true;
+            cbMotor.Items.AddRange(new object[] { "Motor de combustion interna", "Motor electrico", "Motor a reaccion", "Motor de combustion externa", "Motor de combustion de ciclo Striling" });
+            cbMotor.Location = new Point(198, 196);
+            cbMotor.Name = "cbMotor";
+            cbMotor.Size = new Size(249, 31);
+            cbMotor.TabIndex = 1;
+            // 
+            // cbColor
+            // 
+            cbColor.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbColor.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cbColor.FormattingEnabled = true;
+            cbColor.Items.AddRange(new object[] { "Azul", "Verde", "Morado", "Negro", "Rosa", "Rojo", "Blanco" });
+            cbColor.Location = new Point(198, 254);
+            cbColor.Name = "cbColor";
+            cbColor.Size = new Size(249, 31);
+            cbColor.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(198, 81);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(249, 32);
+            textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(198, 137);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(249, 32);
+            textBox2.TabIndex = 4;
+            // 
+            // btnEnviar
+            // 
+            btnEnviar.Location = new Point(198, 339);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Size = new Size(193, 63);
+            btnEnviar.TabIndex = 5;
+            btnEnviar.Text = "Enviar";
+            btnEnviar.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(80, 93);
+            label1.Name = "label1";
+            label1.Size = new Size(74, 23);
+            label1.TabIndex = 6;
+            label1.Text = "Marca";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(80, 146);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 23);
+            label2.TabIndex = 7;
+            label2.Text = "Modelo";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(80, 204);
+            label3.Name = "label3";
+            label3.Size = new Size(66, 23);
+            label3.TabIndex = 8;
+            label3.Text = "Motor";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(80, 262);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 23);
+            label4.TabIndex = 9;
+            label4.Text = "Color";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1230, 509);
-            Controls.Add(comboBox1);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(btnEnviar);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(cbColor);
+            Controls.Add(cbMotor);
             Controls.Add(dgvListaAutos);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dgvListaAutos).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -109,6 +205,14 @@
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
-        private ComboBox comboBox1;
+        private ComboBox cbMotor;
+        private ComboBox cbColor;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Button btnEnviar;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }
