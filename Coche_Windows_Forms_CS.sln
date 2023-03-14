@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coche_Windows_Forms_CS", "Coche_Windows_Forms_CS\Coche_Windows_Forms_CS.csproj", "{5B2B2658-2D2E-409E-9575-387CD6D204C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B2B2658-2D2E-409E-9575-387CD6D204C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B2B2658-2D2E-409E-9575-387CD6D204C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B2B2658-2D2E-409E-9575-387CD6D204C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B2B2658-2D2E-409E-9575-387CD6D204C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D84C36A-205F-4AD6-AAC9-0E0B18274184}
+	EndGlobalSection
+EndGlobal
