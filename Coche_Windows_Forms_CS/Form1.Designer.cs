@@ -42,6 +42,7 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvListaAutos).BeginInit();
             SuspendLayout();
             // 
@@ -176,11 +177,22 @@
             label4.TabIndex = 9;
             label4.Text = "Color";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(198, 27);
+            label5.Name = "label5";
+            label5.Size = new Size(819, 34);
+            label5.TabIndex = 10;
+            label5.Text = "Escoge las caracteristicas que deseas en tu nuevo modelo";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1230, 509);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -214,5 +226,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private Label label5;
     }
 }
